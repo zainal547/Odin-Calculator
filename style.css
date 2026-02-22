@@ -1,0 +1,46 @@
+body {
+    /* Menggunakan Flexbox untuk memusatkan konten */
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal (kiri-kanan) */
+    align-items: center;     /* Memusatkan secara vertikal (atas-bawah) */
+    
+    background-color: #f0f0f0; /* Warna latar belakang halaman (opsional) */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#display {
+    height: 60px;
+    background-color: #222;
+    color: #0f0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button.operator { background-color: #ff9500; color: white; }
+button.equals { background-color: #2ecc71; grid-column: span 1; }
+button.clear { background-color: #e74c3c; color: white; grid-column: span 2; }
